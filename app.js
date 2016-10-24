@@ -9,13 +9,7 @@ app.get('/', function (req, res) {
 });
 
 server.listen(2222);
-// var server = app.listen(process.env.port || 8080, function () {
-//   var port = server.address().port;
-//   console.log('------------------------------------')
-//   console.log('App is listening on port %s', port)
-//   console.log('Press Ctrl+C to quit.')
-//   console.log('------------------------------------')
-// });
+
 
 var elasticsearch = require('elasticsearch');
 var client = new elasticsearch.Client({
