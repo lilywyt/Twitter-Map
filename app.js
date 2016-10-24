@@ -19,8 +19,7 @@ server.listen(2222);
 
 var elasticsearch = require('elasticsearch');
 var client = new elasticsearch.Client({
-   //host: 'https://search-twittmap-qtnxkqs26tfzc27letgg2blf5i.us-east-1.es.amazonaws.com:443'
-    host: 'https://search-twittermap-hw-c3n4qckpkm4l3ald2i5conkdxy.us-west-2.es.amazonaws.com'
+    host: 'your endpoint'
 });
 
 io.on('connection', function (socket) {
