@@ -8,10 +8,10 @@ from pyes import *
 from dateutil import parser
 
 #Variables that contains the user credentials to access Twitter API
-access_token='3527076748-HflTXP74NjSWDIyuAmakc69VqTAZ29WIUVfdgjE'
-access_token_secret='XSKSRbfQ2baQFJ5Sc9WrSPf6AT05NvdpMtQi6fGLajEoR'
-consumer_key='X8B3WiESc1q6v8NQqRcP3kUvw'
-consumer_secret='Wb619BUbvSOTZ3Azoe1oYkCmVRE7yD3TkZMjFobDoi64XEcCLX'
+access_token='########################################'
+access_token_secret='########################################'
+consumer_key='########################################'
+consumer_secret='########################################'
 
 
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
-    conn = ES('https://search-twittermap-hw-c3n4qckpkm4l3ald2i5conkdxy.us-west-2.es.amazonaws.com')
+    conn = ES('your elasticsearch endpoint')
     try:  
         conn.indices.delete_index("twitmap")
     except:
